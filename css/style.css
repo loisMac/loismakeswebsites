@@ -1,0 +1,208 @@
+body {
+    background-color: #fdfcf6;
+    font-family: "Dosis", sans-serif;
+    color: #2f4150;
+  }
+
+  .logo {
+    width: 120px;
+    transition: ease-in-out 0.3s;
+  }
+
+  .logo:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+  }
+  
+  h1, h2, h5 {
+    font-family: "Gaegu", sans-serif;
+    color: #2f4150;
+  }
+  
+  .navbar-brand {
+    font-family: "Nanum Pen Script", cursive;
+    font-size: 1.8rem;
+    color: #2f4150 !important;
+  }
+  
+  .nav-link {
+    font-size: 1rem;
+    color: #6f91a7 !important;
+    margin: 0 8px;
+    transition: all 0.2s ease;
+  }
+  
+  .nav-link:hover {
+    color: #2f4150 !important;
+  }
+  
+  .btn {
+    background-color: #6f91a7;
+    color: #fdfcf6;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 24px;
+    font-family: "Dosis", sans-serif;
+    transition: all 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: #2f4150;
+    color: #fdfcf6;
+  }
+  
+  .hero {
+    padding: 80px 20px;
+  }
+  
+  .spline-desktop iframe {
+    max-width: 600px;
+    border-radius: 20px;
+    display: block;
+    text-align: center;
+    }
+
+    .lottie-mobile {
+        display: none;
+        text-align: center;
+      }
+
+  @media (max-width: 992px) { 
+
+    body{
+     max-width: 100%;
+    }
+
+    .spline-desktop iframe {
+        display:none
+    }
+
+    .lottie-mobile {
+        display: block;
+      }
+
+    .logo {
+        width: 80px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .spline-desktop iframe {
+        display:none
+    }
+
+    .lottie-mobile {
+        display: block;
+      }
+  }
+    
+  .about .row {
+    justify-content: center;
+    text-align: left; /* keep text aligned normally */
+  }
+  
+/* Contact form styling */
+form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+    font-family: "Dosis", sans-serif;
+  }
+  
+  form label {
+    display: flex;
+    flex-direction: column;
+    font-weight: 500;
+    color: #2f4150;
+    text-transform: lowercase;
+  }
+  
+  form input[type="email"],
+  form input[type="text"],
+  form textarea {
+    background-color: #fff;
+    border: 1.5px solid #6f91a7;
+    border-radius: 40px;
+    padding: 12px 18px;
+    font-size: 1rem;
+    font-family: "Dosis", sans-serif;
+    color: #2f4150;
+    outline: none;
+    transition: all 0.2s ease;
+  }
+  
+  form textarea {
+    border-radius: 20px;
+    min-height: 120px;
+    resize: vertical;
+  }
+  
+  form input:focus,
+  form textarea:focus {
+    border-color: #2f4150;
+    box-shadow: 0 0 0 3px rgba(111, 145, 167, 0.2);
+  }
+  
+  form button {
+    background-color: #6f91a7;
+    color: #fdfcf6;
+    border: none;
+    border-radius: 40px;
+    padding: 10px 24px;
+    font-family: "Dosis", sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  form button:hover {
+    background-color: #2f4150;
+    color: #fdfcf6;
+  }
+  
+
+  .card-title {
+    font-family: "Gaegu", sans-serif;
+    color: #2f4150;
+  }
+
+  #typewriter::after {
+    content: '|';
+    animation: blink 1s infinite;
+  }
+
+  /* Services page styling */
+.services h2 {
+    text-transform: lowercase;
+  }
+  
+  .service-card {
+    background-color: #ffffff;
+    border: 1.5px solid #d1e3e1;
+    transition: all 0.3s ease;
+  }
+  
+  .service-card h5 {
+    font-family: "Gaegu", sans-serif;
+    color: #2f4150;
+  }
+  
+  .service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(47, 65, 80, 0.1);
+    border-color: #6f91a7;
+  }
+  
+  
+  @keyframes blink {
+    50% { opacity: 0; }
+  }
+  
+  
+  footer {
+    background: none;
+  }
+  
