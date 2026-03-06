@@ -37,7 +37,8 @@ document.addEventListener("DOMContentLoaded", function () {
     link.addEventListener('click', () => {
       const navbarCollapse = document.querySelector('.navbar-collapse');
       if (navbarCollapse && navbarCollapse.classList.contains('show')) {
-        new bootstrap.Collapse(navbarCollapse).hide();
+        const instance = bootstrap.Collapse.getInstance(navbarCollapse) || new bootstrap.Collapse(navbarCollapse, { toggle: false });
+        instance.hide();
       }
     });
   });

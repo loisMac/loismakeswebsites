@@ -165,7 +165,8 @@ h1, h2, h5 {
   background: #e8f5ee;
   padding: 6px 14px;
   border-radius: 20px;
-  margin-bottom: 1.5rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0;
 }
 
 .available-dot {
@@ -687,6 +688,57 @@ footer {
 }
 
 /* ============================================
+   MOBILE NAV
+   ============================================ */
+.navbar-toggler {
+  border: 1.5px solid rgba(47, 65, 80, 0.2);
+  border-radius: 8px;
+  padding: 6px 10px;
+}
+
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 3px rgba(123, 181, 164, 0.25);
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%232f4150' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+@media (max-width: 767.98px) {
+  .navbar-collapse {
+    background-color: var(--cream);
+    border-top: 1px solid rgba(47, 65, 80, 0.08);
+    padding: 0.75rem 0 1rem;
+    margin-top: 0.5rem;
+  }
+
+  .navbar-nav .nav-item {
+    border-bottom: 1px solid rgba(47, 65, 80, 0.06);
+  }
+
+  .navbar-nav .nav-item:last-child {
+    border-bottom: none;
+  }
+
+  .nav-link {
+    padding: 0.8rem 0.25rem !important;
+    margin: 0;
+    font-size: 1.1rem;
+    text-align: left;
+  }
+
+  /* Hide underline animation — doesn't suit vertical stacking */
+  .nav-link::after {
+    display: none;
+  }
+
+  .nav-link.active {
+    color: var(--navy) !important;
+    font-weight: 600;
+  }
+}
+
+/* ============================================
    RESPONSIVE
    ============================================ */
 @media (max-width: 992px) {
@@ -731,10 +783,6 @@ footer {
 
   .hero-tools {
     justify-content: center;
-  }
-
-  .availability {
-    display: inline-flex;
   }
 
   .hero-portrait-wrap {
